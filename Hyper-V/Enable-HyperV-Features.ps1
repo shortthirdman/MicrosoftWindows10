@@ -25,9 +25,10 @@ If (-NOT (([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdent
  Break
 }
 
-
 ..\dgreadiness_v3.6\DG_Readiness_Tool_v3.6.ps1 -Ready
 ..\dgreadiness_v3.6\DG_Readiness_Tool_v3.6.ps1 -Enable -AutoReboot
 & Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+& bcdedit /set hypervisorlaunchtype auto
 # $Creds = Get-Credential
 # Restart-Computer -ComputerName localhost -Credential $Creds -Force
+# DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V

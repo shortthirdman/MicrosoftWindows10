@@ -1,0 +1,1 @@
+echo %USERNAME% logged on at %DATE% %TIME% >> %USERPROFILE%\log.txt

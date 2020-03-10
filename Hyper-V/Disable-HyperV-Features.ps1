@@ -25,6 +25,7 @@ If (-NOT (([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdent
 
 ..\dgreadiness_v3.6\DG_Readiness_Tool_v3.6.ps1 -Ready -Path ..\dgreadiness_v3.6\
 ..\dgreadiness_v3.6\DG_Readiness_Tool_v3.6.ps1 -Disable -AutoReboot
-Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+& Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
+& bcdedit /set hypervisorlaunchtype off
 # $Creds = Get-Credential
 # Restart-Computer -ComputerName localhost -Credential $Creds -Force
