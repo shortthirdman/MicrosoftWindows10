@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+; Created by:Shawn Brink
+; Created on: August 13th 2016
+; Tutorial: http://www.tenforums.com/tutorials/60177-open-powershell-window-here-administrator-add-windows-10-a.html
+
+
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShellAsAdmin]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\PowerShellAsAdmin]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\PowerShellAsAdmin]
+
+[-HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PowerShellAsAdmin]
