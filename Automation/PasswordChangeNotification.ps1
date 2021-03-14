@@ -1,5 +1,5 @@
 ﻿<#
-.Synopsis
+.SYNOPSIS
    Script to Automated Email Reminders when Users Passwords due to Expire.
 .DESCRIPTION
    Script to Automated Email Reminders when Users Passwords due to Expire.
