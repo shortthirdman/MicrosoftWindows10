@@ -17,3 +17,6 @@ Get-CimInstance -ClassName Win32_Service | Select-Object -Property Status,Name,D
 Get-Process | Where-Object -FilterScript {$_.Responding -eq $false} | Stop-Process
 Get-Process -Name BadApp | Where-Object -FilterScript {$_.SessionId -neq 0} | Stop-Process
 Invoke-Command -ComputerName Server01 {Stop-Process Powershell}
+
+Start-Process PowerShell -Verb RunAs
+powershell -Command "Start-Process PowerShell -Verb RunAs"

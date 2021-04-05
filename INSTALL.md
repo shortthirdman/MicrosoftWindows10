@@ -1,3 +1,8 @@
+```powershell
+$env:OPENSSL_CONF = "${env:ProgramFiles}\OpenSSL-Win64\bin\cnf\openssl.cnf"
+$env:OPENSSL_HOME = "${env:ProgramFiles}\OpenSSL-Win64"
+```
+
 `Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted`
 
 `Install-Module -Name PSLogging`
